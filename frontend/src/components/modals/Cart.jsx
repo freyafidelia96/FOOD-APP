@@ -1,7 +1,7 @@
 import { useImperativeHandle, useRef } from "react";
 import { useCart } from "../../store/shopping-cart-context";
 
-export default function Cart({ ref }) {
+export default function Cart({ ref, onGoToCheckout }) {
   const dialogRef = useRef();
 
   const { items, getTotalCartAmount, updateItemQuantity } = useCart();
@@ -81,6 +81,7 @@ export default function Cart({ ref }) {
           className="bg-primary text-text-secondary px-4 py-1 
           rounded-sm cursor-pointer
           hover:bg-primary-hover"
+          onClick={onGoToCheckout}
         >
           Go to Checkout
         </button>

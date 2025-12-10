@@ -35,6 +35,7 @@ def write_json(filename: str, data):
 class Order(BaseModel):
   id: str | None = None
   items: list[dict]
+  total: float
   fullname: str
   email: str
   street: str
@@ -52,7 +53,12 @@ async def place_order(order: Order):
   """Saves a new order to orders.json."""
   current_orders = read_json("orders.json")
   
-  order_dict = order.dict()
+  order_dict = order.model_dump()
+  
+  # Generate incremental ID
+  if order_dict["id"] is None:
+    order_dict["id"] = str(len(current_orders) + 1)
+
   
   current_orders.append(order_dict)
   write_json("orders.json", current_orders)

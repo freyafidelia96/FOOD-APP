@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "id": "1",
+    "items": [
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": "7.99",
+        "quantity": 5
+      }
+    ],
+    "total": 39.95,
+    "fullname": "Achi Fidelia Oreoluwa",
+    "email": "freyafidelia@gmail.com",
+    "street": "14, Wahab Olaoluwa Street, Egan, Lagos",
+    "city": "Lagos",
+    "postal_code": "101111"
+  },
+  {
+    "id": "2",
+    "items": [
+      {
+        "id": "m1",
+        "name": "Mac & Cheese",
+        "price": "8.99",
+        "quantity": 1
+      },
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": "12.99",
+        "quantity": 1
+      },
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": "7.99",
+        "quantity": 1
+      },
+      {
+        "id": "m4",
+        "name": "Spaghetti Carbonara",
+        "price": "10.99",
+        "quantity": 1
+      },
+      {
+        "id": "m5",
+        "name": "Veggie Burger",
+        "price": "9.99",
+        "quantity": 7
+      },
+      {
+        "id": "m6",
+        "name": "Grilled Chicken Sandwich",
+        "price": "10.99",
+        "quantity": 3
+      }
+    ],
+    "total": 143.86,
+    "fullname": "Fidelia Achi",
+    "email": "freyafidelia@gmail.com",
+    "street": "4, Adeyinka osijo, Akoka Lagos",
+    "city": "Akoka",
+    "postal_code": "101111"
+  }
+]

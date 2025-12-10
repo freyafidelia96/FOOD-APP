@@ -6,6 +6,7 @@ export const CartContext = createContext({
   updateItemQuantity: (id, amount) => {},
   getCartCount: () => {},
   getTotalCartAmount: () => {},
+  clearCart: () => {},
 });
 
 export default function CartContextProvider({ children }) {
@@ -72,12 +73,17 @@ export default function CartContextProvider({ children }) {
     );
   }
 
+  function clearCart() {
+    setShoppingCart({ items: [] });
+  }
+
   const contextValue = {
     items: shoppingCart.items,
     addItemToCart,
     updateItemQuantity,
     getCartCount,
     getTotalCartAmount,
+    clearCart,
   };
 
   return (
