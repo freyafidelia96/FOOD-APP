@@ -62,5 +62,39 @@
     "street": "4, Adeyinka osijo, Akoka Lagos",
     "city": "Akoka",
     "postal_code": "101111"
+  },
+  {
+    "id": "3",
+    "items": [
+      {
+        "id": "m1",
+        "name": "Mac & Cheese",
+        "price": "8.99",
+        "quantity": 9
+      }
+    ],
+    "total": 80.91,
+    "fullname": "Achi Fidelia Oreoluwa",
+    "email": "freyafidelia@gmail.com",
+    "street": "14, Wahab Olaoluwa Street, Egan, Lagos",
+    "city": "Lagos",
+    "postal_code": "101111"
+  },
+  {
+    "id": "4",
+    "items": [
+      {
+        "id": "m1",
+        "name": "Mac & Cheese",
+        "price": "8.99",
+        "quantity": 1
+      }
+    ],
+    "total": 8.99,
+    "fullname": "Ore",
+    "email": "ore@ore.com",
+    "street": "no 1, ore street",
+    "city": "Lagos",
+    "postal_code": "101111"
   }
 ]

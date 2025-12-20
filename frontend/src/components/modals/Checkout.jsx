@@ -64,7 +64,7 @@ export default function Checkout({ ref }) {
     <dialog
       ref={dialogRef}
       onClick={handleBackdropClick}
-      className="bg-bg-modal m-auto backdrop:bg-backdrop w-2/5 p-4 rounded-sm"
+      className="bg-bg-modal m-auto backdrop:bg-backdrop md:w-2/5 w-full p-4 rounded-sm"
     >
       <p className="text-xl text-primary-dark font-bold mb-3">Checkout</p>
       <p className="mb-3">Total Amount: ${getTotalCartAmount()}</p>
@@ -76,7 +76,7 @@ export default function Checkout({ ref }) {
           </label>
           <input
             required
-            className="w-2/4 focus:outline-blue-700 bg-white rounded-sm"
+            className="md:w-2/4 focus:outline-blue-700 bg-white rounded-sm p-1"
             name="fullname"
           />
         </div>
@@ -88,7 +88,7 @@ export default function Checkout({ ref }) {
           <input
             required
             type="email"
-            className="w-2/4 focus:outline-blue-700 bg-white rounded-sm"
+            className="md:w-2/4 focus:outline-blue-700 bg-white rounded-sm p-1"
             name="email"
           />
         </div>
@@ -99,19 +99,19 @@ export default function Checkout({ ref }) {
           </label>
           <input
             required
-            className="w-2/4 focus:outline-blue-700 bg-white rounded-sm"
+            className="md:w-2/4 focus:outline-blue-700 bg-white rounded-sm p-1"
             name="street"
           />
         </div>
 
-        <div className="flex w-3/4 gap-3">
+        <div className="flex md:w-3/4 gap-3 w-full flex-wrap">
           <div className="flex flex-col gap-2 mb-2">
             <label className="text-primary-dark font-bold text-base">
               Postal Code
             </label>
             <input
               required
-              className="focus:outline-blue-700 bg-white rounded-sm"
+              className="focus:outline-blue-700 bg-white rounded-sm p-1"
               name="postal-code"
             />
           </div>
@@ -122,7 +122,7 @@ export default function Checkout({ ref }) {
             </label>
             <input
               required
-              className="focus:outline-blue-700 bg-white rounded-sm"
+              className="focus:outline-blue-700 bg-white rounded-sm p-1"
               name="city"
             />
           </div>

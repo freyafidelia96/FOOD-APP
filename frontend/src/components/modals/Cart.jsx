@@ -25,7 +25,7 @@ export default function Cart({ ref, onGoToCheckout }) {
     <dialog
       ref={dialogRef}
       onClick={handleBackdropClick}
-      className="bg-bg-modal m-auto backdrop:bg-backdrop w-2/5 p-4 rounded-sm"
+      className="bg-bg-modal m-auto backdrop:bg-backdrop md:w-2/5 w-full p-4 rounded-sm"
     >
       <p className="text-lg text-primary-dark font-bold">Your Cart</p>
       {items.length === 0 && (

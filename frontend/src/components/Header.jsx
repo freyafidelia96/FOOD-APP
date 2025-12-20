@@ -6,7 +6,10 @@ export default function Header({ onOpenCart }) {
   const cartCount = getCartCount();
 
   return (
-    <header className="flex items-center justify-between w-full px-30 py-10">
+    <header
+      className="flex items-center justify-between w-full md:px-30 md:py-10
+      p-3"
+    >
       <div className="flex justify-between gap-3 items-center">
         <img
           src={logoJPG}

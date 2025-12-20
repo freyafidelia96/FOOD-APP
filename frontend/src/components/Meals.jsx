@@ -36,7 +36,7 @@ export default function Meals() {
   }
 
   return (
-    <section className="grid grid-cols-3 justify-center items-stretch gap-4 w-3/4 mx-auto my-10">
+    <section className="grid md:grid-cols-3 justify-center items-stretch gap-4 w-3/4 mx-auto my-10">
       {meals.map((meal) => (
         <MealItem
           key={meal.id}
